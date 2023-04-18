@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <link rel="stylesheet" href="./style/17.css">
+    <script src="./script/17.js"></script>
+    <title>K-digital 3기 JS - 온도변환</title>
+</head>
+
+<body> 
+    <main class="container">
+        <article>
+            <header>
+                <h1>온도 변환</h1>
+            </header>
+            <form>
+                <div class="grid">
+                    <select id="se1" required> <!--// required는 무조건 입력되어야한다는뜻 -->
+                        <option value="℃" selected>섭씨온도(℃)</option>
+                        <option value="℉">화씨온도(℉)</option>
+                    </select>
+                    <select id="se2" required>
+                        <option value="℉" selected>화씨온도(℉)</option>
+                        <option value="℃">섭씨온도(℃)</option>
+                    </select>
+                </div>
+                <div class="grid">
+                    <input type="number" id="t1" name="t1">  <!-- number 들어가서 숫자만 입력 가능함 -->
+                    <div id="d1"></div>
+                    <input type="number" id="t2" name="t2" readonly>
+                    <div id="d2"></div>
+                </div>
+            </form>
+        </article>
+
+    </main>
+</body>
+
+</html>
